@@ -29,7 +29,7 @@ class StudentSeeder extends Seeder
             $student=new Student;
             $student->name=$faker->name;
             $student->email=$faker->email;
-            $student->address=$faker->address;
+            $student->address=$faker->jobTitle();
     
             $student->save();
 

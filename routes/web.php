@@ -4,8 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Student;
 use App\Http\Controllers\studentController;
 
-
 Route::get('/', function () {
+    $records=Student::all();
+    return view('formHome')->with('records',$records);
+});
+
+Route::get('/admin', function () {
     $records=Student::all();
     return view('form')->with('records',$records);
 });

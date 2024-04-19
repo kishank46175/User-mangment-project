@@ -46,7 +46,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Address</label>
+                                <label for="exampleInputEmail1" class="form-label">Profile</label>
                                 <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                             </div>
@@ -112,7 +112,7 @@
                                                         </div>
 
                                                         <div class="mb-3">
-                                                            <label for="exampleInputEmail1" class="form-label">Address</label>
+                                                            <label for="exampleInputEmail1" class="form-label">Profile</label>
                                                             <input type="text" name="address" class="form-control"   value="{{$records->address}}" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                                                         </div>
@@ -132,8 +132,7 @@
                                     <a href="delete_record/{{$records->id}}">
                                         <button class="btn btn-danger ms-2">Delete</button>
                                     </a>
-                                    <a href="view_form/{{$records->id}}"><button class="btn btn-primary ms-2">View</button></a>
-                                    <a href="projects_show/{{$records->id}}"><button class="btn btn-primary ms-2">Projects</button></a>
+                                   
                                 </div>
                             </td>
 
