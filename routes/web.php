@@ -23,24 +23,3 @@ Route::post('edit_record/{id}',[App\Http\Controllers\studentController::class,'e
 Route::get('view_form/{id}',[App\Http\Controllers\studentController::class,'view_form']);
 
 
-
-//projects
-// Route::get('/projects_show/{id}',[App\Http\Controllers\projectController::class,'projects_show']);
-
-// Route::get('/projects_show/{id}',function(string $id){
-//     //can use with also
-
-//     return view('projects')->with('id',$id);
-// });
-
-Route::get('/projects_show/{id}',[App\Http\Controllers\projectController::class,'get_data']);
-
-Route::post('addProject/{id}',[App\Http\Controllers\projectController::class,'addProject']);
-
-
-
-Route::post('edit_project/{id}',[App\Http\Controllers\projectController::class,'edit_project'])->name('projects.edit');
-
-
-
-Route::get('delete_project/{id}',[App\Http\Controllers\projectController::class,'delete_project'])->name('projects.delete');
